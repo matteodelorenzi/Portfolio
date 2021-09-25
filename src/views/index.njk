@@ -10,16 +10,16 @@ layout: base
 
 <header>
     <svg id="Layer_1" class="svg svg--logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 283.5 113.5"><defs><style>.cls-1{fill:$c-primary;}</style></defs><polygon points="242.2 0 211.2 0 170.4 63.5 179.2 0 148.6 0 86.3 90.9 83.3 90.9 46.2 0 15.8 0 0 113.5 24.9 113.5 34.6 43.6 63.9 113.5 99.5 113.5 148.3 43.6 138.7 112.7 138.3 113.5 138.6 113.5 163.4 113.5 171.1 113.5 185.4 88.4 221.9 25 224.7 25 243.3 88.4 250.7 113.5 283.5 113.5 242.2 0"/></svg>
-    <p class="sectionname">About</p>
+    <p class="infoname infoname--section">About</p>
 </header>
 
 <main>
     <section class="section">
         <div class = "container--left">
-            <h1 class="title title--name"><span class="italicspan">Ma</span>tteo <span class="italicspan italicspan--orpheus linebreak">De Lorenzi</span></h1>
+            <h1 class="title title--name paddingleft"><span class="italicspan">Ma</span>tteo <span class="italicspan italicspan--orpheus linebreak">De Lorenzi</span></h1>
 
-            <button class="">Send me <span class="italicspan">love</span></button>
-            <div class="container--text">
+            <button class="button button--absolute">Send me <span class="italicspan">love</span></button>
+            <div class="container--text paddingleft paddingleft--bigger">
                 <p>
                     I’m a Brussels based <span class="italicspan italicspan--boldcaps">junior Designer.</span>
                 </p>
@@ -35,20 +35,30 @@ layout: base
         </div>
     </section>
 
-    <section>
-        <p class="sectionname">Works</p>
+    <div class="infoname__container">
+        <p class="infoname infoname--section">Works</p>
+    </div>
 
-        <h2 class="title">Bunch of <span class="italicspan italicspan--boldcaps">projects<sup>(4)</sup></span></h2>
+    <section class="section">
+        <div class="works__container">
+            <h2 class="title paddingleft paddingleft--bigger">Bunch of <span class="italicspan italicspan--boldcaps linebreak">projects<sup>(4)</sup></span></h2>
+            
+            <div>
+                <p class="infoname infoname--category paddingleft">Photography</p>
 
-        <p class="sectionname">Photography</p>
-
-        <ul class="">
-            <li><h3 class="title title--project">winter</h3></li>
-            <li><h3 class="title title--project">sanserif</h3></li>
-            <li><h3 class="title title--project">settebello</h3></li>
-        </ul>
-        <button class="">see the project</button>
-        <button class="">Next</button>
+                <ul class="">
+                    <li><h3 class="title title--project paddingleft">winter</h3></li>
+                    {# <li><h3 class="title title--project paddingleft">sanserif</h3></li>
+                    <li><h3 class="title title--project paddingleft">settebello</h3></li> #}
+                    <button class="button button--project marginleft">see the project</button>
+                    <button class="button">Next</button>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="container">
+            <img class="image" src="{{ '/assets/images/winter01.png' | resize(600) }}" alt="Winter landscape">
+        </div>
     </section>
 </main>
 

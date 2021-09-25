@@ -15,6 +15,7 @@ li{
 
 ul{
     padding: 0;
+    margin: 0;
 }
 
 p{
@@ -22,12 +23,14 @@ p{
     font-size: 2.5vw;
     margin-block-start: 0;
     margin-block-end: 0;
-    padding-left: 100px;
 }
 
 h1{font-weight: inherit;}
 h2{font-weight: inherit;}
-h3{font-weight: inherit;}
+h3{font-weight: inherit;
+    margin: 4.5vh 0;
+    line-height: 0.8;
+}
 
 body{
     font-family: nimbus-sans, sans-serif;
@@ -41,21 +44,48 @@ body{
     box-sizing: border-box;
 }
 
-h1{
-    padding-left: 50px;
-}
-
 .title{
     font-size:3.9vw;
 
     &--name{
-        font-size:5vw; 
+        font-size:5vw;
+        margin: 5vh 0; 
     }
     &--project{
         text-transform: uppercase;
         font-size: 13vw;
         font-style: italic;
         letter-spacing: -10px;
+    }
+}
+
+.text{
+    &--small{
+        font-size: 1vw;
+    }
+}
+
+.contact{
+    &__list{
+        display: flex;
+        margin: 0 auto;
+    }
+    &__el{
+        padding-right: 25px;
+        font-style: italic;
+        margin: auto 0;
+    }
+}
+
+.marginleft{
+    margin-left: 3vw;
+}
+
+.paddingleft{
+    padding-left: 3vw;
+
+    &--bigger{
+        padding-left: 6vw;
     }
 }
 
@@ -72,17 +102,28 @@ h1{
     }
 }
 
-.sectionname{
+.infoname{
     text-transform: uppercase;
-    font-size: 0.98vw;
     letter-spacing: 2px;
     width: auto;
+    
+    
+    &--section{
+        font-size: 0.98vw;
+        transform: rotate(-90deg);
+        height: 21px;
+        margin-top: 1.6vh;
+    }
+
+    &--category{
+        font-size: 0.8vw;
+        width: 160px;
+    }
 }
 
 .breadcrumbs{
     padding: 0;
     text-align: right;
-    margin-top: 50px;
     font-size: 1.7vw;
 }
 

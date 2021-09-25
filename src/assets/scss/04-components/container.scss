@@ -3,11 +3,13 @@ header{
     flex-direction: row;
     justify-content: space-between;
     height: 80px;
+    position: absolute;
+    width: 95vw;
 }
 
 section{
     margin-bottom: 100px;
-    height: 900px;
+    height: 91vh;
 }
 
 .section{
@@ -17,7 +19,7 @@ section{
 
 .container{
     position: absolute;
-    height: 900px;
+    height: 91vh;
     left: 70%;
     width: 53vw;
     margin-left: -26.5vw;
@@ -28,6 +30,19 @@ section{
         flex-direction: column;
         justify-content: space-between;
         height: 38vw;
+        margin: auto 0;
+    }
+}
+
+.works__container{
+    height: 91vh;
+    width: 44vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &--contact{
+        width: inherit;
     }
 }
 
@@ -39,4 +54,9 @@ section{
     z-index: -10;
     top: 0;
     left: 0;
+}
+
+.infoname__container{
+    display: flex;
+    justify-content: flex-end;
 }
