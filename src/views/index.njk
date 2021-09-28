@@ -43,17 +43,20 @@ layout: base
         <div class="works__container">
             <h2 class="title paddingleft paddingleft--bigger">Bunch of <span class="italicspan italicspan--boldcaps linebreak">projects<sup>(4)</sup></span></h2>
             
-            <div>
-                <p class="infoname infoname--category paddingleft">Photography</p>
+            <div class="splide" id="#splide">
+                <div class="splide__track">
+                    <p class="infoname infoname--category paddingleft">Photography</p>
 
-                <ul class="">
-                    <li><h3 class="title title--project paddingleft">winter</h3></li>
-                    {# <li><h3 class="title title--project paddingleft">sanserif</h3></li>
-                    <li><h3 class="title title--project paddingleft">settebello</h3></li> #}
+                    <ul class="splide__list">
+                        <li class="splide__slide"><h3 class="title title--project paddingleft">winter</h3></li>
+                        <li class="splide__slide"><h3 class="title title--project paddingleft">sanserif</h3></li>
+                        <li class="splide__slide"><h3 class="title title--project paddingleft">settebello</h3></li>
+                    </ul>
                     <button class="button button--project marginleft">see the project</button>
-                    <button class="button">Next</button>
-                </ul>
-                
+                        <div class="splide__arrows">
+                            <button class=" splide__arrow button">Next</button>
+                        </div>
+                </div>
             </div>
         </div>
         <div class="container">
