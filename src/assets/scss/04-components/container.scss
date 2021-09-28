@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,17 +7,17 @@ header{
     width: 95vw;
 }
 
-section{
+section {
     margin-bottom: 100px;
     height: 91vh;
 }
 
-.section{
+.section {
     display: flex;
     flex-direction: row;
 }
 
-.container{
+.container {
     position: absolute;
     height: 91vh;
     left: 70%;
@@ -25,7 +25,7 @@ section{
     margin-left: -26.5vw;
     z-index: -1;
 
-    &--left{
+    &--left {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -34,19 +34,19 @@ section{
     }
 }
 
-.works__container{
+.works__container {
     height: 91vh;
     width: 44vw;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
-    &--contact{
+    &--contact {
         width: inherit;
     }
 }
 
-.leftcolumn{
+.leftcolumn {
     position: fixed;
     width: 30vw;
     height: 100%;
@@ -56,7 +56,7 @@ section{
     left: 0;
 }
 
-.infoname__container{
+.infoname__container {
     display: flex;
     justify-content: flex-end;
 }

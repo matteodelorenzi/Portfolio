@@ -1,6 +1,6 @@
-.image{
+.image {
     width: 40vw;
-    margin: 13vh 0
+    margin: 13vh 0;
 }
 
 // .breadcrumbs::after{
@@ -12,12 +12,12 @@
 
 // }
 
-.infoname--category::after{
-    content:"";
+.infoname--category::after {
+    content: '';
     position: relative;
     display: block;
     width: 200px;
     height: 1px;
     margin-top: 5px;
-    background-color: white;
+    background-color: #fff;
 }
