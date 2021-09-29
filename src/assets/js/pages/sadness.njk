@@ -1,0 +1,13 @@
+{% extends 'layouts/base.njk' %}
+
+{% block projet%}
+<section class="container container--open">
+	
+	<h2 class="title title--name fadeIn">
+		{% block title %}
+		{% endblock %}
+	</h2>
+	<p class="text">{%  block info %}{% endblock %}</p>
+	<p class="text">{% block test %}{% endblock %}</p>
+</section>
+{% endblock %}
