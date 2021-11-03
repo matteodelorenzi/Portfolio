@@ -22,7 +22,7 @@ Swiper.use([Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow])
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     effect: "coverflow",
-    slidesPerView: 2.5,
+    slidesPerView: 2,
     spaceBetween: 40,
     mousewheel: true,
     centeredSlides: false,
