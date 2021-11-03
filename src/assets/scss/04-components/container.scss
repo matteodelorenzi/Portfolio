@@ -10,48 +10,16 @@ header {
     flex-direction: row;
 }
 
-.container {
+.footer{
+    
     display: flex;
     flex-direction: column;
-    position: absolute;
-    height: 91vh;
-    left: 70%;
-    width: 52vw;
-    margin-left: -26.5vw;
-    z-index: -1;
-
-    &--left {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 38vw;
-        margin: auto 0;
-    }
-}
-
-.works__container {
-    height: 91vh;
-    width: 44vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-    &--contact {
-        width: inherit;
-    }
-}
-
-.leftcolumn {
-    position: fixed;
-    width: 30vw;
-    height: 100%;
-    background-color: #1C1C1C;
-    z-index: -10;
-    top: 0;
-    left: 0;
-}
-
-.infoname__container {
-    display: flex;
     justify-content: flex-end;
+
+    &__list{
+        display: flex;
+    }
+    &__el:last-child{
+        margin-left: auto;
+    }
 }

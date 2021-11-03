@@ -12,19 +12,26 @@
 //     rewind: true
 // }).mount()
 
-import Swiper, { Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow } from 'swiper'
+import Swiper, { Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow, Scrollbar } from 'swiper'
 import 'swiper/swiper.scss'
 
 //configure Swiper to use modules
-Swiper.use([Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow])
+Swiper.use([Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow, Scrollbar])
 
 //init Swiper
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     effect: "coverflow",
+    freeMode: {
+        enabled: true,
+    },
+    speed: 1000,
     slidesPerView: 2,
+    loopedSlides: 5,
     spaceBetween: 40,
-    mousewheel: true,
+    mousewheel: {
+        releaseOnEdges: true
+    },
     centeredSlides: false,
     keyboard: {
         enabled: true,
@@ -33,15 +40,15 @@ const swiper = new Swiper('.swiper', {
     coverflowEffect: {
         rotate: 10,
         stretch: 0,
-        depth: 50,
-        modifier: 1,
+        depth: 150,
+        modifier: 1.2,
+        slideShadows: false,
     },
 
     // And if we need scrollbar
     scrollbar: {
-        el: '.swiper-scrollbar',
-        draggable: true,
-        hide: false,
+        el: ".swiper-scrollbar",
+        hide: false
     }
 })
 
