@@ -121,7 +121,9 @@
   "dependencies": {
     "@babel/runtime-corejs3": "^7.12.0",
     "@splidejs/splide": "^2.4.21",
+    "barba.js": "^1.0.0",
     "cross-env": "^7.0.3",
+    "gsap": "^3.8.0",
     "sanitize.css": "^12.0.1",
     "swiper": "^7.2.0"
   }

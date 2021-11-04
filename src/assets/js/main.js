@@ -1,3 +1,4 @@
+
 // import Splide from '@splidejs/splide'
 
 // new Splide('.splide', {
@@ -15,6 +16,12 @@
 import Swiper, { Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow, Scrollbar } from 'swiper'
 import 'swiper/swiper.scss'
 
+
+setTimeout( function() {
+    const rectangle = document.querySelector('.js-loader')
+    rectangle.style.opacity= '0'
+    console.log(rectangle)
+}, 2000)
 //configure Swiper to use modules
 Swiper.use([Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow, Scrollbar])
 
