@@ -12,6 +12,18 @@
 
 // }
 
+.title--deco::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin-top: 17px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color:#151515;
+}
+
 .infoname--category::after {
     content: '';
     position: relative;

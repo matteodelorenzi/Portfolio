@@ -1,6 +1,9 @@
 .swiper {
     width: 100%;
-    height: 100%;
+}
+
+.swiper-wrapper{
+    height: 40vh;
 }
 
 .swiper-slide {
@@ -34,7 +37,7 @@
 }
 
 .swiper-scrollbar{
-    margin-left: 20px;
+    margin-left: 60px;
     margin-top: 40px;
     bottom: 3px;
     z-index: 50;
