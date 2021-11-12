@@ -3,9 +3,7 @@ $c-mediumGrey: #BEBEBE;
 $c-lightGrey:#EAEAEA;
 $c-white: #ffffff;
 $c-black: #000000;
-$c-blue:#01354B;
-$c-lightBlue:#3C80B7;
-$c-pink:#DC6261;
+
 
 $size-text: 18px;
 
@@ -13,8 +11,11 @@ $transition: all 0.4s cubic-bezier(0.11, 0, 0.5, 0);
 
 //Mixin
 
+
 $screen-ipadPro:1000px;
 
 $screen-xl:1400px;
 $screen-xxl:2000px;
 $screen-xxxl:2400px;
+
+$screen-mobile:450px;

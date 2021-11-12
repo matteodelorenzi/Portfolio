@@ -13,6 +13,7 @@ header {
 
 .container{
     margin: auto 60px;
+    height: 100%;
 }
 
 .footer{
@@ -49,4 +50,16 @@ header {
     body{
         padding: 100px;
     }
+}
+
+@include mobile{
+    .footer{
+        &__list{
+            flex-direction: column;
+        }
+        &__el:last-child{
+            margin-left: inherit;
+        }
+    }
+    
 }

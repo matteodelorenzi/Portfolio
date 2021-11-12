@@ -62,3 +62,12 @@
 // // .swiper-wrapper{
 // //     transition: all 600ms ease-in !important;
 // // }
+
+@include mobile{
+    .swipper{
+        height: 100%;
+    }
+    .swiper-wrapper{
+        height: 60vh;
+    }
+}

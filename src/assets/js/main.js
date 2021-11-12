@@ -34,12 +34,14 @@ const swiper = new Swiper('.swiper', {
         enabled: true,
     },
     speed: 1000,
-    slidesPerView: 2,
+    slidesPerView: 1.5,
+    followFinger: true,
     loop: true,
-    // loopedSlides: 5,
+    loopedSlides: 5,
     spaceBetween: 40,
     mousewheel: {
-        releaseOnEdges: true
+        releaseOnEdges: true,
+        sensitivity: 0.3,
     },
     centeredSlides: false,
     keyboard: {
