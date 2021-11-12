@@ -53,13 +53,6 @@ const swiper = new Swiper('.swiper', {
         slideShadows: false,
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: false,
-        draggable: true
-    },
-
     breakpoints: {
         // when window width is >= 2000
         2000: {
