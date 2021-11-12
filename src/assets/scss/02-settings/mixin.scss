@@ -1,0 +1,6 @@
+@mixin xxl{
+    @media (min-width: #{$screen-xxl}){
+        @content;
+    }
+}
+

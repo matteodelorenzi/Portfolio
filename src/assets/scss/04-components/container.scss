@@ -44,3 +44,9 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+@include xxl {
+    body{
+        padding: 100px;
+    }
+}

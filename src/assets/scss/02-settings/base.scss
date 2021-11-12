@@ -186,6 +186,14 @@ main{
     }
 }
 
+.projets{
+    position: relative;
+    &__el{
+        position: absolute;
+        transition: $transition;
+    }
+}
+
 .breadcrumbs {
     display: flex;
     flex-flow: row wrap;

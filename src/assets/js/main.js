@@ -16,6 +16,7 @@
 import Swiper, { Navigation, Pagination, Keyboard, Mousewheel, EffectCoverflow, Scrollbar } from 'swiper'
 import 'swiper/swiper.scss'
 
+const projets = document.querySelectorAll(".projets__el")
 
 setTimeout( function() {
     const rectangle = document.querySelector('.js-loader')
@@ -34,7 +35,8 @@ const swiper = new Swiper('.swiper', {
     },
     speed: 1000,
     slidesPerView: 2,
-    loopedSlides: 5,
+    loop: true,
+    // loopedSlides: 5,
     spaceBetween: 40,
     mousewheel: {
         releaseOnEdges: true
@@ -43,7 +45,6 @@ const swiper = new Swiper('.swiper', {
     keyboard: {
         enabled: true,
     },
-    loop: true,
     coverflowEffect: {
         rotate: 10,
         stretch: 0,
@@ -55,7 +56,31 @@ const swiper = new Swiper('.swiper', {
     // And if we need scrollbar
     scrollbar: {
         el: ".swiper-scrollbar",
-        hide: false
+        hide: false,
+        draggable: true
+    },
+
+    breakpoints: {
+        // when window width is >= 2000
+        2000: {
+            slidesPerView: 3
+        }
+    },
+
+    on:{
+        transitionStart(){
+            projets.forEach(projets => projets.style.opacity= "0")
+            console.log("work")
+        },
+        transitionEnd(){
+            const current = projets[this.realIndex]
+            current.style.opacity="1"
+        },
+        snapGridLengthChange:function(){
+            if( this.snapGrid.length != this.slidesGrid.length ){
+                this.snapGrid = this.slidesGrid.slice(0);
+            }
+        }
     }
 })
 
